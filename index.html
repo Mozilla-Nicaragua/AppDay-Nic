@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='description' content='Firefox OS App Days Nicaragua'>
+    <meta name='og:image' content='https://pbs.twimg.com/profile_images/2194490120/moznilogo2.png'>
     <title>Firefox OS App Days Nicaragua</title>
 
     
@@ -31,6 +33,14 @@
     .input-group > span {
       font-size: 23px;
     }
+    .share-button { 
+      margin: auto;
+      padding-top: 60px; 
+      top: 0; 
+      left: 0; 
+      bottom: 0; 
+      right: 0; 
+    }
     .social {
       font-size: 60px;
     }
@@ -43,6 +53,13 @@
       height: 150px;
       margin-top: -5px;
       margin-right: 10px;
+    }
+    .mozni {
+      float: left;
+      width: 120px;
+      height: 120px;
+      margin-top: 3px;
+      margin-left: 10px;
     }
 
     </style>
@@ -82,19 +99,60 @@
         </div>
         <!--End mc_embed_signup-->
         <div class="col-md-12 text-center">
-          <a href="https://www.youtube.com/channel/UCEkbeFKx54arvv7nSFazfzg" class="social"><span class="typcn typcn-social-youtube-circular"></span></a>         
-          <a href="https://www.facebook.com/mozillanicaragua?fref=ts" class="social"><span class="typcn typcn-social-facebook-circular"></span></a>       
-          <a href="http://www.twitter.com/Mozilla_Nic" class="social"><span class="typcn typcn-social-twitter-circular"></span></a>         
-          <a href="https://github.com/Mozilla-Nicaragua" class="social"><span class="typcn typcn-social-github-circular"></span></a>          
-          <a href="http://www.mozillanicaragua.org" class="social"><span class="typcn typcn-world"></span></a>
+          <a href="https://www.youtube.com/channel/UCEkbeFKx54arvv7nSFazfzg" class="social" target="_blank"><span class="typcn typcn-social-youtube-circular"></span></a>         
+          <a href="https://www.facebook.com/mozillanicaragua?fref=ts" class="social" target="_blank"><span class="typcn typcn-social-facebook-circular"></span></a>       
+          <a href="http://www.twitter.com/Mozilla_Nic" class="social" target="_blank"><span class="typcn typcn-social-twitter-circular"></span></a>         
+          <a href="https://github.com/Mozilla-Nicaragua" class="social" target="_blank"><span class="typcn typcn-social-github-circular"></span></a>          
+          <a href="http://www.mozillanicaragua.org" class="social" target="_blank"><span class="typcn typcn-world"></span></a>
         </div>
       </div>
     </div>
-
-    <img src="images/appday.png" class="appday">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/mozni.png" class="mozni">
+        </div>
+        <div class="col-md-4">
+          <div id="share-button-top" class="share-button share-button-top"></div>
+        </div>
+        <div class="col-md-4">
+          <img src="images/appday.png" class="appday">
+        </div>
+      </div>
+    </div>
     <!-- jQuery  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  
+    <script src="js/share.min.js"></script> 
+    <script type="text/javascript">    
+    var share = new Share("#share-button-top", {
+      url:  "http://appdays.mozillanicaragua.org/",    
+      title:  "Firefox OS App Days Nicaragua",  
+      text:  "Si sos desarrollador, diseñador o lo que sea y estás interesado en las tecnologías web, no podés perderte el Firefox OS App Days, una serie de eventos que se llevarán a cabo en más de 20 ciudades del mundo y ahora sera en Nicaragua para ayudarte a comenzar a desarrollar aplicaciones web para Firefox OS.﻿",   
+      image:  "https://pbs.twimg.com/profile_images/2194490120/moznilogo2.png",     
+      networks: {
+        google_plus: {
+          enabled: true, 
+          url: "http://appdays.mozillanicaragua.org/",    
+        },
+        twitter: {
+          enabled: true,
+          url:  "http://appdays.mozillanicaragua.org/",   
+          text: "Yo Voy Al #FirefoxOS App Days #Nicaragua Por @Mozilla_Nic",  
+        },
+        facebook: {
+          enabled: true,
+          load_sdk: false, 
+          url: "http://appdays.mozillanicaragua.org/",
+          app_id: "abc123",
+          title: "Yo Voy Al #FirefoxOS App Days #Nicaragua Por @Mozilla Nicaragua",
+          caption: "Mozilla Nicaragua",
+          text: "Si sos desarrollador, diseñador o lo que sea y estás interesado en las tecnologías web, no podés perderte el Firefox OS App Days, una serie de eventos que se llevarán a cabo en más de 20 ciudades del mundo y ahora sera en Nicaragua para ayudarte a comenzar a desarrollar aplicaciones web para Firefox OS.﻿",
+          image: "https://pbs.twimg.com/profile_images/2194490120/moznilogo2.png", 
+        }
+      }      
+    });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="http://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
   </body>
 </html>
