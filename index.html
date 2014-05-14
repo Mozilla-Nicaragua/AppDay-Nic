@@ -4,24 +4,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>App Days Nicaragua</title>
+    <title>Firefox OS App Days Nicaragua</title>
 
     
     <link rel="stylesheet" type="text/css" href="lib/typicons/typicons.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href="http://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
     <style type="text/css">
+    @import url(http://fonts.googleapis.com/css?family=Roboto);
     body{
+      font-family: Roboto, sans-serif;
       background-color: rgb(29,112,233);
-      background: url(images/back.png) no-repeat center center fixed;
+      background: url(images/back.png) repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
     }
     .form{
-      background-color: #fff;
-      border-radius: 4px;
+      background-color: rgba(255,255,255,0.9);
+      border-radius: 7px;
+      margin-top: 45px;
+      box-shadow: 3px #000;
+      border: 2px solid #fff;
     }    
     .input-group > span {
       font-size: 23px;
@@ -31,6 +36,13 @@
     }
     .social:hover {
       color: red;
+    }
+    .appday {
+      float: right;
+      width: 150px;
+      height: 150px;
+      margin-top: -5px;
+      margin-right: 10px;
     }
 
     </style>
@@ -43,42 +55,44 @@
   <body>
     <a href="/en-US/" id="tabzilla">mozilla</a>
 
-    <div class="form">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="text-center">
-              <h1>App Days Nicaragua</h1>
-            </div>
+
+    <div class="container">
+      <div class="row form">
+        <div class="col-md-12">
+          <div class="text-center">
+            <h1>Firefox OS App Days Nicaragua</h1>
           </div>
-          <div class="col-md-12">
-            <p>Lorem ipsum Deserunt quis occaecat enim reprehenderit consequat eu sint dolor est magna exercitation veniam.</p>
-          </div>
-          <div class="col-md-12">
-            <!-- Begin MailChimp Signup Form -->
-            <form action="http://oscarcortez.us8.list-manage2.com/subscribe/post?u=3e34e7f1bb3c1de26c4cbaa43&amp;id=bed2997b5a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            	<label for="mce-EMAIL"></label>
-              <p class="input-group">
-                <span class="input-group-addon"><span class="typcn typcn-user"></span></span>
-                <input type="email" value="" name="EMAIL" class="email form-control input-lg" id="mce-EMAIL" placeholder="foo@bar.com" required />
-              </p>
-              <p class="help-block text-center"><small>Prometemos no enviarte SPAM de ningun modo</small></p> <p class="text-center">
-                <input type="submit" value="Mantenme Informado" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-lg">
-              </p>
-            </form>
-          </div>
-          <!--End mc_embed_signup-->
-          <div class="col-md-12 text-center">
-            <p>Buscanos En</p>
-            <a href="" class="social"><span class="typcn typcn-social-youtube-circular"></span></a>         
-            <a href="" class="social"><span class="typcn typcn-social-facebook-circular"></span></a>       
-            <a href="" class="social"><span class="typcn typcn-social-twitter-circular"></span></a>         
-            <a href="" class="social"><span class="typcn typcn-social-github-circular"></span></a>          
-            <a href="" class="social"><span class="typcn typcn-world"></span></a>
-          </div>
+        </div>
+        <div class="col-md-12">
+          <p>Si sos desarrollador, diseñador o lo que sea y estás interesado en las tecnologías web, no podés perderte el Firefox OS App Days, una serie de eventos que se llevarán a cabo en más de 20 ciudades del mundo y ahora sera en Nicaragua para ayudarte a comenzar a desarrollar aplicaciones web para Firefox OS.﻿
+          </p>
+          <p>Estaremos notificandote dentro de poco tiempo todos los detalles acerca del evento. Si deseas estar pendiente y ser uno de los primeros, no pierdas mas tiempo, te invitamos a que te registres desde ya</p>
+        </div>
+        <div class="col-md-12">
+          <!-- Begin MailChimp Signup Form -->
+          <form action="http://oscarcortez.us8.list-manage2.com/subscribe/post?u=3e34e7f1bb3c1de26c4cbaa43&amp;id=bed2997b5a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          	<label for="mce-EMAIL"></label>
+            <p class="input-group">
+              <span class="input-group-addon"><span class="typcn typcn-mail"></span></span>
+              <input type="email" value="" name="EMAIL" class="email form-control input-lg" id="mce-EMAIL" placeholder="foo@bar.com" required />
+            </p>
+            <p class="help-block text-center"><small>Prometemos no enviarte SPAM de ningun modo</small></p> <p class="text-center">
+              <input type="submit" value="Mantenme Informado" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-lg">
+            </p>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+        <div class="col-md-12 text-center">
+          <a href="https://www.youtube.com/channel/UCEkbeFKx54arvv7nSFazfzg" class="social"><span class="typcn typcn-social-youtube-circular"></span></a>         
+          <a href="https://www.facebook.com/mozillanicaragua?fref=ts" class="social"><span class="typcn typcn-social-facebook-circular"></span></a>       
+          <a href="http://www.twitter.com/Mozilla_Nic" class="social"><span class="typcn typcn-social-twitter-circular"></span></a>         
+          <a href="https://github.com/Mozilla-Nicaragua" class="social"><span class="typcn typcn-social-github-circular"></span></a>          
+          <a href="http://www.mozillanicaragua.org" class="social"><span class="typcn typcn-world"></span></a>
         </div>
       </div>
     </div>
+
+    <img src="images/appday.png" class="appday">
     <!-- jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>    
