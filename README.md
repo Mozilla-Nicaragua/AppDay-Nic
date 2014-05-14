@@ -1,10 +1,14 @@
-AppDay-Nic
+Firefox OS App Days Nicaragua
+
 ==========
 
-Site for the app day
+Sitio Web Informativo
 
-Primera version del sitio del App Day
+==========
 
-En este sitio se pretendé subir todas las apps que desarrollemos
+Si sos desarrollador, diseñador o lo que sea y estás interesado en las tecnologías web, no podés perderte el Firefox OS App Days, una serie de eventos que se llevarán a cabo en más de 20 ciudades del mundo y ahora sera en Nicaragua para ayudarte a comenzar a desarrollar aplicaciones web para Firefox OS.﻿
 
-http://mozilla-nicaragua.github.io/AppDay-Nic/
+=========
+
+http://appdays.mozillanicaragua.org/
+
