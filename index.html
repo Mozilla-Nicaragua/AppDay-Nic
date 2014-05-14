@@ -9,9 +9,28 @@
     
     <link rel="stylesheet" type="text/css" href="lib/typicons/typicons.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="http://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
     <style type="text/css">
     body{
+      background-color: rgb(29,112,233);
+      background: url(images/back.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    .form{
       background-color: #fff;
+      border-radius: 4px;
+    }    
+    .input-group > span {
+      font-size: 23px;
+    }
+    .social {
+      font-size: 60px;
+    }
+    .social:hover {
+      color: red;
     }
 
     </style>
@@ -22,58 +41,47 @@
     <![endif]-->
   </head>
   <body>
+    <a href="/en-US/" id="tabzilla">mozilla</a>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>App Days Nicaragua</h1>
-        </div>
-        <div class="col-md-12">
-          <p>Lorem ipsum Deserunt quis occaecat enim reprehenderit consequat eu sint dolor est magna exercitation veniam.</p>
-        </div>
-        <div class="col-md-12">
-          <!--<form action="" method="post" class="">
-            <p class="input-group">
-              <span class="input-group-addon"><span class="typcn typcn-user"></span></span>
-              <input type="text" class="form-control input-lg" name="email" placeholder="foo@bar.com" />
-            </p>
-            <p class="help-block text-center"><small>Prometemos no enviarte SPAM de ningun modo</small></p>
-            <p class="text-center">
-              <button type="submit" class="btn btn-success btn-lg">Mantenme Informado</button>
-            </p>
-            </span>
-          </form>-->
-          <!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="http://oscarcortez.us8.list-manage2.com/subscribe/post?u=3e34e7f1bb3c1de26c4cbaa43&amp;id=bed2997b5a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	<label for="mce-EMAIL"></label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_3e34e7f1bb3c1de26c4cbaa43_bed2997b5a" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
-        </div>
-        <div class="col-md-12">
-          <p>Buscanos En</p>
-          <span class="typcn typcn-social-youtube-circular"></span>          
-          <span class="typcn typcn-social-facebook-circular"></span>          
-          <span class="typcn typcn-social-twitter-circular"></span>          
-          <span class="typcn typcn-social-github-circular"></span>          
-          <span class="typcn typcn-world"></span>
+    <div class="form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <h1>App Days Nicaragua</h1>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <p>Lorem ipsum Deserunt quis occaecat enim reprehenderit consequat eu sint dolor est magna exercitation veniam.</p>
+          </div>
+          <div class="col-md-12">
+            <!-- Begin MailChimp Signup Form -->
+            <form action="http://oscarcortez.us8.list-manage2.com/subscribe/post?u=3e34e7f1bb3c1de26c4cbaa43&amp;id=bed2997b5a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            	<label for="mce-EMAIL"></label>
+              <p class="input-group">
+                <span class="input-group-addon"><span class="typcn typcn-user"></span></span>
+                <input type="email" value="" name="EMAIL" class="email form-control input-lg" id="mce-EMAIL" placeholder="foo@bar.com" required />
+              </p>
+              <p class="help-block text-center"><small>Prometemos no enviarte SPAM de ningun modo</small></p> <p class="text-center">
+                <input type="submit" value="Mantenme Informado" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-lg">
+              </p>
+            </form>
+          </div>
+          <!--End mc_embed_signup-->
+          <div class="col-md-12 text-center">
+            <p>Buscanos En</p>
+            <a href="" class="social"><span class="typcn typcn-social-youtube-circular"></span></a>         
+            <a href="" class="social"><span class="typcn typcn-social-facebook-circular"></span></a>       
+            <a href="" class="social"><span class="typcn typcn-social-twitter-circular"></span></a>         
+            <a href="" class="social"><span class="typcn typcn-social-github-circular"></span></a>          
+            <a href="" class="social"><span class="typcn typcn-world"></span></a>
+          </div>
         </div>
       </div>
     </div>
     <!-- jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="http://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
   </body>
 </html>
