@@ -9,9 +9,24 @@
     
     <link rel="stylesheet" type="text/css" href="lib/typicons/typicons.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="http://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
     <style type="text/css">
     body{
-      background-color: #fff;
+      background-color: rgba(29,112,233,0.7);
+      background: url(images/back.png) repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }    
+    .input-group > span {
+      font-size: 23px;
+    }
+    .social {
+      font-size: 60px;
+    }
+    .social:hover {
+      color: red;
     }
 
     </style>
@@ -22,11 +37,14 @@
     <![endif]-->
   </head>
   <body>
+    <a href="/en-US/" id="tabzilla">mozilla</a>
 
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>App Days Nicaragua</h1>
+          <div class="text-center">
+            <h1>App Days Nicaragua</h1>
+          </div>
         </div>
         <div class="col-md-12">
           <p>Lorem ipsum Deserunt quis occaecat enim reprehenderit consequat eu sint dolor est magna exercitation veniam.</p>
@@ -44,18 +62,19 @@
             </span>
           </form>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 text-center">
           <p>Buscanos En</p>
-          <span class="typcn typcn-social-youtube-circular"></span>          
-          <span class="typcn typcn-social-facebook-circular"></span>          
-          <span class="typcn typcn-social-twitter-circular"></span>          
-          <span class="typcn typcn-social-github-circular"></span>          
-          <span class="typcn typcn-world"></span>
+          <a href="" class="social"><span class="typcn typcn-social-youtube-circular"></span></a>          
+          <a href="" class="social"><span class="typcn typcn-social-facebook-circular"></span></a>          
+          <a href="" class="social"><span class="typcn typcn-social-twitter-circular"></span></a>          
+          <a href="" class="social"><span class="typcn typcn-social-github-circular"></span></a>          
+          <a href="" class="social"><span class="typcn typcn-world"></span></a>
         </div>
       </div>
     </div>
     <!-- jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="http://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
   </body>
 </html>
